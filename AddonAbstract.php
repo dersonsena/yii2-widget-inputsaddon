@@ -48,9 +48,9 @@ abstract class AddonAbstract extends InputWidget
         parent::init();
 
         if ($this instanceof ButtonsAddon)
-            $this->side = (!empty($this->side) && !is_null($this->side) ? $this->size : self::RIGHT_SIDE);
+            $this->side = (!empty($this->side) && !is_null($this->side) ? $this->side : self::RIGHT_SIDE);
         else
-            $this->side = (!empty($this->side) && !is_null($this->side) ? $this->size : self::LEFT_SIDE);
+            $this->side = (!empty($this->side) && !is_null($this->side) ? $this->side : self::LEFT_SIDE);
 
         $this->options = ArrayHelper::merge([
             'class' => 'form-control',
