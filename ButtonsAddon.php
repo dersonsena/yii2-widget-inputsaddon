@@ -7,11 +7,6 @@ use yii\base\InvalidConfigException;
 class ButtonsAddon extends AddonAbstract
 {
     /**
-     * @inheritdoc
-     */
-    public $size;
-
-    /**
      * List of the HTML Buttons for the group
      * @var array
      */

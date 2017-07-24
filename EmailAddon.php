@@ -12,7 +12,7 @@ class EmailAddon extends AddonAbstract
      */
     public $forceEmailType = false;
 
-    public $icon = 'glyph-icon icon-envelope';
+    public $icon = 'glyphicon glyphicon-envelope';
 
     /**
      * @inheritdoc

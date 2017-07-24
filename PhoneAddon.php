@@ -18,7 +18,7 @@ class PhoneAddon extends AddonAbstract
      */
     public $mask = ['(99) 99999-9999', '(99) 9999-9999'];
 
-    public $icon = 'glyph-icon icon-phone';
+    public $icon = 'glyphicon glyphicon-phone-alt';
 
     /**
      * @inheritdoc
