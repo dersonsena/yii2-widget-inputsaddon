@@ -1,0 +1,29 @@
+{
+  "name": "dersonsena/yii2-widget-inputsaddon",
+  "description": "A Widget for Yii 2 with a simple way to group fields with bootstrap components",
+  "keywords": [
+    "yii2",
+    "input-addon",
+    "boostrap add on",
+    "bootstrap group"
+  ],
+  "type": "yii2-extension",
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "Kilderson Sena",
+      "email": "dersonsena@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7",
+    "yiisoft/yii2": ">=2.0.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "dersonsena\\inputsAddon\\": ""
+    }
+  }
+}
