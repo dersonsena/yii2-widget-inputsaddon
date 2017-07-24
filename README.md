@@ -49,35 +49,34 @@ This widget supports all the parameters similar to the `\yii\widgets\InputWidget
 The implementations below can be done by widgets: `AreaAddon`, `EmailAddon`, `MoneyAddon`, `PercentAddon` and `PhoneAddon`:
 
 ```php
-<?php 
-    // the widget usege WITH ActiveForm and model. Minimal configuration
-    echo $form->field($model, 'IMO_VAL_ARE')
-        ->widget(EmailAddon::className()) ?>
+// the widget usege WITH ActiveForm and model. Minimal configuration
+echo $form->field($model, 'IMO_VAL_ARE')
+    ->widget(EmailAddon::className());
 
-    // the widget usege WITHOUT ActiveForm or model
-    echo EmailAddon::widget([
-        'name' => 'person_email',
-        'value' => 'username@email.com.br'
-    ]);
+// the widget usege WITHOUT ActiveForm or model
+echo EmailAddon::widget([
+    'name' => 'person_email',
+    'value' => 'username@email.com.br'
+]);
 
-    // the example for costumization
-    echo $form->field($model, 'email_field')
-        ->widget(EmailAddon::className(), [
-            'side' => EmailAddon::RIGHT_SIDE,
-            'size' => EmailAddon::SIZE_LARGE,
-            'icon' => 'fa fa-envelope' // default is: glyphicon glyphicon-envelope
-            'forceEmailType' => true, // Force the input field to be email type. Available only for EmailAddon
-            'options' => [
-                'placeholder' => 'Type your email...'
-            ]
-        ]) ?>
+// the example for costumization
+echo $form->field($model, 'email_field')
+    ->widget(EmailAddon::className(), [
+        'side' => EmailAddon::RIGHT_SIDE,
+        'size' => EmailAddon::SIZE_LARGE,
+        'icon' => 'fa fa-envelope' // default is: glyphicon glyphicon-envelope
+        'forceEmailType' => true, // Force the input field to be email type. Available only for EmailAddon
+        'options' => [
+            'placeholder' => 'Type your email...'
+        ]
+    ])
 
-    // Text instead icon
-    echo $form->field($model, 'email_field')
-        ->widget(EmailAddon::className(), [
-            'icon' => '@'
-            'useIconText' => true
-        ]) ?>
+// Text instead icon
+echo $form->field($model, 'email_field')
+    ->widget(EmailAddon::className(), [
+        'icon' => '@'
+        'useIconText' => true
+    ])
 ```
 
 ## Usage Buttons Addon
@@ -90,5 +89,5 @@ echo $form->field($model, 'person_id')
             Html::button("Add", ['class' => 'btn btn-default', 'onclick' => 'alert("Add")']),
             Html::button("Remove", ['class' => 'btn btn-danger'])
         ]
-    ]) ?>
+    ])
 ```
