@@ -1,6 +1,6 @@
 <?php
 
-namespace backend\widgets\inputsAddon;
+namespace dersonsena\inputsAddon;
 
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;

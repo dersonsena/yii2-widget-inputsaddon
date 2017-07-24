@@ -1,6 +1,6 @@
 <?php
 
-namespace backend\widgets\inputsAddon;
+namespace dersonsena\inputsAddon;
 
 use yii\base\InvalidConfigException;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace backend\widgets\inputsAddon;
+namespace dersonsena\inputsAddon;
 
 class MoneyAddon extends AddonAbstract
 {
