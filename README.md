@@ -81,6 +81,8 @@ echo $form->field($model, 'email_field')
 
 ## Usage Buttons Addon
 
+The bootstrap Button Addons. Please, for more details, see the http://getbootstrap.com/components/#input-groups-buttons.
+
 ```php
 echo $form->field($model, 'person_id')
     ->widget(ButtonsAddon::className(), [
